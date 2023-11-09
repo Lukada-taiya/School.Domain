@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Application", "Schoo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Infrastructure", "Student.Infrastructure\School.Infrastructure.csproj", "{82241042-D12C-4F30-AEFD-FF5159FFADFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Students.Presentation", "Students.Presentation\Students.Presentation.csproj", "{8D988E8C-E109-4BDB-8EEB-97708003ADD2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Presentation", "Students.Presentation\School.Presentation.csproj", "{8D988E8C-E109-4BDB-8EEB-97708003ADD2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

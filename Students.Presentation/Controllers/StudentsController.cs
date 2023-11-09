@@ -4,7 +4,7 @@ using School.Domain;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
-namespace Students.Presentation.Controllers
+namespace School.Presentation.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -20,9 +20,15 @@ namespace Students.Presentation.Controllers
         [HttpGet]
         public ActionResult<List<Student>> Get()
         {
-            var students = _studentService.GetAllStudents();
-            Console.WriteLine(students.Count);
+            var students = _studentService.GetAllStudents(); 
             return Ok(students);
+        }
+
+        [HttpPost]
+        public ActionResult<Student> AddStudent(Student student)
+        {
+            _studentService.AddStudent(student);
+            return Ok(student);
         }
 
         //// GET api/<StudentsController>/5

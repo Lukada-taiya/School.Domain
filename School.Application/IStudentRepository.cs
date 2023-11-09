@@ -10,5 +10,7 @@ namespace School.Application
     public interface IStudentRepository
     {
         List<Student> GetAllStudents();
+
+        Student AddStudent(Student student);
     }
 }

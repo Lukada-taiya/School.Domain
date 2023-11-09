@@ -14,6 +14,13 @@ namespace School.Application
         {
             _studentRepository = studentRepository;
         }
+
+        public Student AddStudent(Student student)
+        {
+            _studentRepository.AddStudent(student);
+            return student;
+        }
+
         public List<Student> GetAllStudents()
         {
             var students = _studentRepository.GetAllStudents();
